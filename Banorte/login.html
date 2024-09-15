@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="imagenes/icono.png" type="image/x-icon">
+
+    <title>Iniciar sesión</title>
+    
+    <style>
+        img.icono {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Nuevo estilo para el header */
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Espacio entre el icono y el texto */
+        }
+
+        .logo {
+            width: 80px; /* Ajustamos el tamaño del logo un poco más grande */
+        }
+
+        .logo-title h1 {
+            font-size: 2rem; /* Ajustamos el tamaño del texto para que no sea muy pequeño */
+            margin: 0;
+        }
+    </style>
+    <div id="contenedor-patito">
+        <img src="imagenes/tarjeta.png" id="patito" alt="Patito caminando">
+        <span id="etiqueta">¡Bienvenido Banausuario!</span>
+    </div>
+</head>
+<header>
+    <div class="logo-title">
+      <img src="imagenes/icono.png" alt="Logo Banorte" class="logo"> <!-- Agregar aquí la ruta correcta del logo -->
+      <h1>Banorte</h1> 
+    </div>
+    
+    <nav>
+      <ul>
+        <!-- Aquí puedes añadir elementos de navegación si es necesario -->
+      </ul>
+    </nav>
+</header>
+<body>
+    <section>
+        <h2>Iniciar sesión</h2>
+        <form id="loginForm">
+            <label>Correo electrónico</label>
+            <input type="email" placeholder="..." id="email" required autofocus>
+            <label>Contraseña</label>
+            <input type="password" placeholder="..." id="password" required>
+            <input type="submit" value="Ingresar">
+        </form>
+        <p>No tienes una cuenta? <a href="signup.html">Registro</a></p>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>
